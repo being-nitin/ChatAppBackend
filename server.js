@@ -26,8 +26,7 @@ app.use("/api/message", messageRoutes);
 
 // const __dirname1 = path.resolve();
 if(process.env.NODE_ENV==="production"){
-const staticPath = path.join(__dirname1,"..",
-"frontend","build");
+const staticPath = path.join(__dirname1,"public","build");
 console.log(staticPath);
 app.use(express.static(staticPath));
 
